@@ -27,7 +27,9 @@ serieCtrl.editSerie = async (req, res) => {
         elenco: req.body.elenco,
         distribuidora: req.body.distribuidora,
         genero: req.body.genero,
-        clasificacion: req.body.clasificacion
+        clasificacion: req.body.clasificacion,
+        temporadas: req.body.temporadas,
+        capitulos: req.body.capitulos
     };
     await Serie.findByIdAndUpdate(id, {$set: serie}, {new: true});
 }

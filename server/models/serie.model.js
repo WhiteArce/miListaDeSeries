@@ -27,8 +27,18 @@ const SeriesSchema = new Schema({
     clasificacion: {
         type: String,
         required: true
+    },
+
+    temporadas: {
+        type: Number,
+        required: true,
+        default: 1
+    },
+
+    capitulos: {
+        type: Number,
+        required: true
     }
 
 });
-
 module.exports = mongoose.model('Serie', SeriesSchema);
