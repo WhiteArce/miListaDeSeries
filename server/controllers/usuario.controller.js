@@ -24,7 +24,8 @@ usuarioCtrl.editUsuario = async (req, res) => {
     const usuario = {
         nombre: req.body.nombre,
         alias: req.body.alias,
-        correo: req.body.correo
+        correo: req.body.correo,
+        misSeries:req.body.misSeries
     };
     await Usuario.findByIdAndUpdate(id, {$set: usuario}, {new: true});
 }

@@ -14,6 +14,12 @@ const UsuarioSchema = new Schema({
     correo:{
         type: String,
         required: true
-    }
+    },
+    misSeries:[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Serie',
+        status: String,
+        required: false
+    }]
 });
 module.exports = mongoose.model('Usuario', UsuarioSchema);
