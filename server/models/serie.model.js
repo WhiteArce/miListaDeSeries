@@ -35,10 +35,11 @@ const SeriesSchema = new Schema({
         default: 1
     },
 
-    capitulos: {
+    capitulos: [{
         type: Number,
+        nombre: String,
         required: true
-    },
+    }],
     imagen: {
         //Direccion de imagen
         type: String,
