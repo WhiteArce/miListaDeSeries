@@ -38,6 +38,11 @@ const SeriesSchema = new Schema({
     capitulos: {
         type: Number,
         required: true
+    },
+    imagen: {
+        //Direccion de imagen
+        type: String,
+        required: true
     }
 
 });

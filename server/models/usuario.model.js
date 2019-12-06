@@ -20,6 +20,10 @@ const UsuarioSchema = new Schema({
         ref: 'Serie',
         status: String,
         required: false
-    }]
+    }],
+    password:{
+        type: String,
+        required: true
+    }
 });
 module.exports = mongoose.model('Usuario', UsuarioSchema);
