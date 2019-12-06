@@ -1,0 +1,13 @@
+.SerieDes {
+background-color: #fff;
+width: fit-content;
+height: fit-content;
+}
+
+ .GaleriaClouster img {
+     position: relative;
+     left: 180px;
+    width: 800px;
+    height: 200px;
+    } 
+

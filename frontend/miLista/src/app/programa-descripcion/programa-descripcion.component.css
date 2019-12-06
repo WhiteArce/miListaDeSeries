@@ -1,0 +1,14 @@
+.SerieDes {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    }
+
+.tabla {
+position: relative;
+top:-480px;
+left: 320px;
+width: fit-content;
+height: fit-content;
+}
+
