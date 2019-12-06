@@ -36,8 +36,8 @@ const SeriesSchema = new Schema({
     },
 
     capitulos: [{
-        type: Number,
         nombre: String,
+        visto: Boolean,
         required: true
     }],
     imagen: {

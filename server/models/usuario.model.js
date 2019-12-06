@@ -7,20 +7,10 @@ const UsuarioSchema = new Schema({
         apellido: String,
         required:true
     },
-    alias:{
-        type: String,
-        required: false
-    },
     correo:{
         type: String,
         required: true
     },
-    misSeries:[{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Serie',
-        status: String,
-        required: false
-    }],
     password:{
         type: String,
         required: true
