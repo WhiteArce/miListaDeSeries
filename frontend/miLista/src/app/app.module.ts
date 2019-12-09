@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,8 @@ import { ProgramaDescripcionComponent } from './programa-descripcion/programa-de
 import { ListaEsperaComponent } from './lista-espera/lista-espera.component';
 import { ListaFinalizadaComponent } from './lista-finalizada/lista-finalizada.component';
 
-
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
