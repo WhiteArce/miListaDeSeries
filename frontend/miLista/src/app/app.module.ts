@@ -12,6 +12,8 @@ import { ListaSeriesComponent } from './lista-series/lista-series.component';
 import { ProgramaDescripcionComponent } from './programa-descripcion/programa-descripcion.component';
 import { ListaEsperaComponent } from './lista-espera/lista-espera.component';
 import { ListaFinalizadaComponent } from './lista-finalizada/lista-finalizada.component';
+import { AgregarSerAnimComponent } from './agregar-ser-anim/agregar-ser-anim.component';
+import { AgregarCapituloComponent } from './agregar-capitulo/agregar-capitulo.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ListaFinalizadaComponent } from './lista-finalizada/lista-finalizada.co
     ProgramaDescripcionComponent,
     ListaEsperaComponent,
     ListaFinalizadaComponent,
+    AgregarSerAnimComponent,
+    AgregarCapituloComponent,
     
   ],
   imports: [
