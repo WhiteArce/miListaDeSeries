@@ -8,21 +8,23 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from '../services/auth.service';
 import { ListaAnimesComponent } from '../lista-animes/lista-animes.component';
 import { ListaSeriesComponent } from '../lista-series/lista-series.component';
-
+import { HomeComponent } from '../home/home.component';
 
 
 @NgModule({
   declarations: [
-    LoginComponent, 
-    RegisterComponent, 
+    LoginComponent,
+    RegisterComponent,
     ListaAnimesComponent,
-    ListaSeriesComponent
+    ListaSeriesComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     AuthRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [AuthService]
 })
