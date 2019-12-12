@@ -1,1 +1,12 @@
-<h1>Lista de animes</h1>
+<div class="row">
+        <div class="col-md-4" *ngFor="let listaanimes of listaAnimes">
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{listaanimes.name}}</h3>
+                    <p>{{listaanimes.creadoPor}}</p>
+                    <p>{{listaanimes.elenco}}</p>
+                    <p>{{listaanimes.desarrolladora}}</p>
+                </div>              
+            </div>
+        </div>
+    </div>

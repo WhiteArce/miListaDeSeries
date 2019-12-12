@@ -14,8 +14,12 @@ export class AnimesService {
   constructor(private httpClient: HttpClient) { }
 
 
-  createAnime(anime: IAnime){
+  createAnime(anime: IAnime) {
     return this.httpClient.post<IAnime>(`${this.URL}/agregar-anime`, anime);
+  }
+
+  getAnime() {
+    return this.httpClient.get<any>(`${this.URL}/lista-animes`);
   }
 
 

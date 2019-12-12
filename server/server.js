@@ -10,6 +10,7 @@ const authRoutes = require('./auth/auth.routes');
 const properties = require('./config/properties');
 const DB = require('./config/db');
 const animesRoutes = require('./anime/anime.routes');
+const listaAnimesRoutes = require('./lista-anime/listaAnime.routes');
 
 
 DB();
@@ -26,6 +27,7 @@ app.use('/api', router);
 
 authRoutes(router);
 animesRoutes(router);
+listaAnimesRoutes(router);
 
 //Routes
 app.use('/api/series', require('./routes/series.routes'));

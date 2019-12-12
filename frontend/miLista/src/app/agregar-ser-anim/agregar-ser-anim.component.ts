@@ -21,7 +21,7 @@ export class AgregarSerAnimComponent implements OnInit {
   }
 
   onNewAnime(form): void {
-    this.animesService.createAnime(form.value).subscribe(res =>{
+    this.animesService.createAnime(form.value).subscribe(res => {
       this.router.navigate(['./home']);
     })
   }
