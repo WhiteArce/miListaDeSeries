@@ -9,6 +9,9 @@ import { AuthService } from '../services/auth.service';
 import { ListaAnimesComponent } from '../lista-animes/lista-animes.component';
 import { ListaSeriesComponent } from '../lista-series/lista-series.component';
 import { HomeComponent } from '../home/home.component';
+import {AgregarSerAnimComponent} from '../agregar-ser-anim/agregar-ser-anim.component';
+import { AgregarCapituloComponent } from '../agregar-capitulo/agregar-capitulo.component';
+
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { HomeComponent } from '../home/home.component';
     RegisterComponent,
     ListaAnimesComponent,
     ListaSeriesComponent,
-    HomeComponent
+    HomeComponent,
+    AgregarSerAnimComponent,
+    AgregarCapituloComponent
   ],
   imports: [
     CommonModule,

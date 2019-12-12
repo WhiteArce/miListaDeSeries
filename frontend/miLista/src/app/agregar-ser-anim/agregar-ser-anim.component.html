@@ -1,0 +1,131 @@
+
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Nuevo Anime</h1>
+
+      <form #frmRegister="ngForm" (ngSubmit)="onRegister(frmRegister)">
+        <div class="form-group">
+         <div class="form-group">
+                <fieldset disabled="">
+                  <label class="control-label" for="disabledInput">ID</label>
+                  <input class="form-control" id="ID" type="text" placeholder="ID de la serie" disabled="">
+                </fieldset>
+          </div>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" name="name" placeholder="Ingresa el nombre del anime" ngModel required>
+          </div>
+          <label for="name">Creado por</label>
+          <input type="text" class="form-control" name="cPor" placeholder="Ingresa el nombre" ngModel required>
+        </div>
+
+        <div class="form-group">
+            <label class="col-form-label" for="inputDefault">Elenco</label>
+            <input type="text" class="form-control" placeholder="Ingresa el elenco" id="inputDefault">
+        </div>
+
+        <div class="form-group">
+            <label class="col-form-label" for="inputDefault">Casa desarrolladora</label>
+            <input type="text" class="form-control" placeholder="Ingresa la casa desarrolladora" id="inputDefault">
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Generos</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked="">
+                Acción
+              </label>
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" checked="">
+                  Ciencia Ficcion
+              </label>
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" checked="">
+                    Deportes
+              </label>
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" checked="">
+                      Espacial
+              </label>
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" checked="">
+                  Infantil
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" checked="">
+                    Mecha
+                  </label>
+                  <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                      Parodia
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="">
+                        Romance
+                      </label>
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="" checked="">
+                          Shounen
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked="">
+                            Terror
+                          </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked="">
+                Artes Marciales
+              </label>
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" checked="">
+                  Comedia
+              </label>
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" checked="">
+                    Drama
+              </label>
+              <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="" checked="">
+                      Fantasía
+              </label>
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="" checked="">
+                  Militar
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="" checked="">
+                    Sobrenatural
+                  </label>
+                  <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" value="" checked="">
+                      Ecchi
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked="">
+                        Seinen
+                      </label>
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="" checked="">
+                          Música
+                        </label>
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked="">
+                            shoujo
+                          </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+              <label class="col-form-label" for="inputDefault">clasificación por edades</label>
+              <input type="text" class="form-control" placeholder="Ingresa la clasificación por edad" id="inputDefault">
+          </div>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </form>
+
+  </div>
+</div>
+</div>
+

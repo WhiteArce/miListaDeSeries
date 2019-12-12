@@ -5,6 +5,8 @@ import { RegisterComponent } from './register/register.component';
 import { ListaAnimesComponent } from '../lista-animes/lista-animes.component';
 import { ListaSeriesComponent } from '../lista-series/lista-series.component';
 import { HomeComponent } from '../home/home.component';
+import { AgregarSerAnimComponent } from '../agregar-ser-anim/agregar-ser-anim.component';
+import { AgregarCapituloComponent } from '../agregar-capitulo/agregar-capitulo.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,8 @@ const routes: Routes = [
     { path: 'animes', component: ListaAnimesComponent },
     { path: 'series', component: ListaSeriesComponent },
     { path: 'home', component: HomeComponent}
+    { path: 'agregar-anime', component: AgregarSerAnimComponent },
+    { path: 'agregar-capitulo', component: AgregarCapituloComponent }
 ];
 
 
