@@ -1,4 +1,4 @@
-const Anime = require('../models/anime.model');
+const Anime = require('./anime.model');
 const animeCtrl = {};
 
 animeCtrl.getAnimes = async (req, res) => {
