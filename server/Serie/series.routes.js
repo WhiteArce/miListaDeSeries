@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const serie = require('../controllers/serie.controller');
+const serie = require('./serie.controller');
 
 router.get('/', serie.getSeries);
 router.post('/', serie.createSerie);

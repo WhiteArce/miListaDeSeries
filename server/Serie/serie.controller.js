@@ -1,4 +1,4 @@
-const Serie = require('../models/serie.model');
+const Serie = require('./serie.model');
 const serieCtrl = {};
 
 serieCtrl.getSeries = async (req, res) => {
