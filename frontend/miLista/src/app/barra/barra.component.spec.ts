@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BarraMenuComponent } from './barra-menu.component';
+import { BarraComponent } from './barra.component';
 
-describe('BarraMenuComponent', () => {
-  let component: BarraMenuComponent;
-  let fixture: ComponentFixture<BarraMenuComponent>;
+describe('BarraComponent', () => {
+  let component: BarraComponent;
+  let fixture: ComponentFixture<BarraComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BarraMenuComponent ]
+      declarations: [ BarraComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BarraMenuComponent);
+    fixture = TestBed.createComponent(BarraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

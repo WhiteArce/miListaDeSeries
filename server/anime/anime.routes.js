@@ -1,5 +1,5 @@
 const Animes = require('./anime.controller');
 
 module.exports = (router) => {
-    router.post('/agregarAnime', Animes.createAnime);
+    router.post('/agregar-anime', Animes.createAnime);
 }

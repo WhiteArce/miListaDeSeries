@@ -9,6 +9,7 @@ const coockeParser = require('cookie-parser');
 const authRoutes = require('./auth/auth.routes');
 const properties = require('./config/properties');
 const DB = require('./config/db');
+const animesRoutes = require('./anime/anime.routes');
 
 
 DB();
@@ -24,6 +25,7 @@ app.use(bodyParserURLEncoded);
 app.use('/api', router);
 
 authRoutes(router);
+animesRoutes(router);
 
 //Routes
 app.use('/api/series', require('./routes/series.routes'));

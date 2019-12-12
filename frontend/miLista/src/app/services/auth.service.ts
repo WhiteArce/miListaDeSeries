@@ -4,57 +4,39 @@ import { IUser } from '../models/user';
 import { IJwtResponse } from '../models/jwt-response';
 import { tap } from 'rxjs/operators';
 import { Observable, BehaviorSubject } from 'rxjs';
+import { Router } from '@angular/router';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AuthService {
-  AUTH_SERVER: string = 'http://localhost:3000';
+
+  URL: string = 'http://localhost:3000';
   authSubject = new BehaviorSubject(false);
   private token: string;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private router: Router) { }
 
   register(user: IUser): Observable<IJwtResponse> {
-    return this.httpClient.post<IJwtResponse>(`${this.AUTH_SERVER}/register`,
-      user).pipe(tap(
-        (res: IJwtResponse) => {
-          if (res) {
-            //Guardar token
-            this.saveToken(res.dataUser.accessToken, res.dataUser.expireIn);
-          }
-        }
-      ));
+    return this.httpClient.post<IJwtResponse>(`${this.URL}/register`, user);
   }
 
   login(user: IUser): Observable<IJwtResponse> {
-    return this.httpClient.post<IJwtResponse>(`${this.AUTH_SERVER}/login`,
-      user).pipe(tap(
-        (res: IJwtResponse) => {
-          if (res) {
-            //Guardar token
-            this.saveToken(res.dataUser.accessToken, res.dataUser.expireIn);
-          }
-        }
-      ));
+    return this.httpClient.post<IJwtResponse>(`${this.URL}/login`, user);
+    this.router.navigate(['/home']);
   }
+
+  loggedIn() {
+    return !!localStorage.getItem('token');
+  }
+
 
   logout(): void {
-    this.token = '';
-    localStorage.removeItem("ACCESS_TOKEN");
-    localStorage.removeItem("EXPIRES_IN");
+    localStorage.removeItem('token');
+    this.router.navigate(['/']);
   }
 
-  private saveToken(token: string, expiresIn: string): void {
-    localStorage.setItem("ACCESS_TOKEN", token);
-    localStorage.setItem("EXPIRES_IN", expiresIn);
 
-    this.token = token;
-  }
-
-  private getToken(): string {
-    if (!this.token) {
-      this.token = localStorage.getItem("ACCESS_TOKEN");
-    }
-    return this.token;
+  public getToken(): string {
+    return localStorage.getItem('token');
   }
 
 

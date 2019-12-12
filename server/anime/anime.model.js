@@ -23,17 +23,17 @@ const animeSchema = new Schema({
         type: String,
         required: true,
         trim: true
-    },
-    genero: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    clasificacion: {
-        type: String,
-        required: true,
-        trim: true
-    }
+     }
+    // genero: {
+    //     type: String,
+    //     required: true,
+    //     trim: true
+    // },
+    // clasificacion: {
+    //     type: String,
+    //     required: true,
+    //     trim: true
+    // }
 },{
     timestamps: true
 });

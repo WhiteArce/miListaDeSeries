@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
-const animeSchema = require('.anime.model/');
+const animeSchema = require('./anime.model');
 
 
 animeSchema.statics = {
-    create: function async (data, cb) {
+    create: function (data, cb) {
         const anime = new this(data)
-        await anime.save(cb);
+         anime.save(cb);
     },
-    delete: function async (data, cb) {
+    delete: function (data, cb) {
         const anime = new this(data)
-        await anime.findByIdAndRemove(data.id);
+         anime.findByIdAndRemove(data.id);
     },
-    edit: function async (data, cb) {
+    edit: function (data, cb) {
         const anime = new this(data)
-        await anime.findByIdAndUpdate(data.id);
+         anime.findByIdAndUpdate(data.id);
     }
 }
 
