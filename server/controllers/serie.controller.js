@@ -34,8 +34,10 @@ serieCtrl.editSerie = async (req, res) => {
     };
     await Serie.findByIdAndUpdate(id, {$set: serie}, {new: true});
 }
+
+
 serieCtrl.deleteSerie = async (req, res) => {
-    Serie.findByIdAndRemove(req.params.id);
+   await Serie.findByIdAndRemove(req.params.id);
     
 }
 
