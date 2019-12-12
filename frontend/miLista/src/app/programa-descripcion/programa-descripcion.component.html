@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-        
+
         <div class="SerieDes">
                 <h3 class="card-header">Titulo</h3>
                 <div class="card-body">
@@ -24,6 +15,29 @@
                 </ul>
 
               </div>
+
+           <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1>Nuevo Capitulo</h1>
+                
+      
+                  <form #frmNCapitulo="ngForm" (ngSubmit)="onRegister(frmNCapitulo)">
+                    <div class="form-group">
+                      <div class="form-group">
+                        <label for="nCapitulo">Numero de capitulo</label>
+                        <input type="text" class="form-control" name="nCapitulo" placeholder="Ingresa el numero" ngModel required>
+                      </div>
+                      <label for="nombreCapitulo">Nombre del capitulo</label>
+                      <input type="text" class="form-control" name="nombreCapitulo" placeholder="Ingresa el nombre del capitulo" ngModel required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                  </form>
+            
+                </div>
+              </div>
+            </div>
+
               <div class="tabla">
                   <div class="conTabla">
               <table class="table table-hover">
@@ -47,5 +61,4 @@
                   </table> 
                 </div>
                 </div>
-</body>
-</html>
+

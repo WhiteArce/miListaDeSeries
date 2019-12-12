@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from '../services/auth.service';
 import { ListaAnimesComponent } from '../lista-animes/lista-animes.component';
 import { ListaSeriesComponent } from '../lista-series/lista-series.component';
+import {AgregarSerAnimComponent} from '../agregar-ser-anim/agregar-ser-anim.component';
+import { AgregarCapituloComponent } from '../agregar-capitulo/agregar-capitulo.component';
 
 
 
@@ -16,7 +18,9 @@ import { ListaSeriesComponent } from '../lista-series/lista-series.component';
     LoginComponent, 
     RegisterComponent, 
     ListaAnimesComponent,
-    ListaSeriesComponent
+    ListaSeriesComponent,
+    AgregarSerAnimComponent,
+    AgregarCapituloComponent
   ],
   imports: [
     CommonModule,
