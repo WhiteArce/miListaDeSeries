@@ -9,20 +9,20 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" routerLink="/" routerLinkActive="active">Inicio <span
+                <a class="nav-link" [routerLink]="['/home']" [routerLinkActive]="['active']">Inicio <span
                         class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/animes" routerLinkActive="active">Animes</a>
+                <a class="nav-link" [routerLink]="['/animes']" [routerLinkActive]="['active']">Animes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/series" routerLinkActive="active">Series</a>
+                <a class="nav-link" [routerLink]="['/series']" [routerLinkActive]="['active']">Series</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/lista-espera" routerLinkActive="active">Lista de espera</a>
+                <a class="nav-link" [routerLink]="['/lista-espera']" [routerLinkActive]="['active']">Lista de espera</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/lista-finalizado" routerLinkActive="active">Lista
+                <a class="nav-link" [routerLink]="['/lista-finalizado']" [routerLinkActive]="['active']">Lista
                     finalizados</a>
             </li>
 
@@ -32,10 +32,13 @@
         <ul class="navbar-nav ml-auto">
           
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/login" routerLinkActive="active">Iniciar Sesion</a>
+                    <a class="nav-link" [routerLink]="['/login']" [routerLinkActive]="['active']">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/register" routerLinkActive="active">Registrarse</a>
+                    <a class="nav-link" [routerLink]="['/register']" [routerLinkActive]="['active']">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/agregar-anime']" routerLinkActive="active">Agregar anime</a>
                 </li>
 
                 <li class="nav-item">

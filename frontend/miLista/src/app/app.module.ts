@@ -20,6 +20,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BarraComponent } from './barra/barra.component';
 import { AnimesService } from "./services/animes.service";
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AnimesService } from "./services/animes.service";
     AgregarSerAnimComponent,
     AgregarCapituloComponent,
     ProgramaDescripcionComponent,
-    BarraComponent
+    BarraComponent,
+    ErrorComponent
     // BarraHomeComponent
 
   ],
